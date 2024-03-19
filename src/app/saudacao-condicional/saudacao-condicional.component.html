@@ -1,0 +1,25 @@
+<div class="flex-container">
+
+    <div class="bloco-saudacao">
+        <h1>{{ horaAtual | date: 'H:mm' }}</h1>
+        <h1>{{ saudacao }}</h1>
+        <h2 style="text-transform: capitalize;">{{ diaDaSemana }}</h2>
+    </div>
+
+    <div class="clima-atual">
+        <h2>{{ city }}</h2>
+
+        @if (clima) {
+        <div>
+            <h1> {{ clima.main.temp | number: '2.0-0' }}°C </h1>
+            <p style="text-transform: capitalize;"> {{ clima.weather[0].description }} </p>
+        </div>
+        }
+
+        @if (!clima) {
+        <div>
+            <p>Carregando...</p>
+        </div>
+        }
+    </div>
+</div>
