@@ -1,22 +1,30 @@
 // Estilos globais
 :host {
-    display: block;
-  }
+  display: block;
+}
 
-  .flex-container {
-    display: flex;
-    flex-direction: column; /* Os itens são dispostos em uma coluna */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    height: 50vh; /* Define a altura para ocupar toda a altura da viewport */
-  }
-  
-  .bloco-saudacao,
-  .clima-atual {
-    background-color: rgba(255, 255, 255, 0.5); /* Tela transparente com 50% de opacidade */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px; /* Espaço entre os blocos */
-  }
-  
+.bloco-saudacao span h1 {
+  font-size: 60px; /* Tamanho da fonte desejado */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Os itens em uma coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 60vh; /* Define a altura para ocupar toda a altura da viewport */
+}
+
+.bloco-saudacao,
+.clima-atual {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Tela transparente com 50% de opacidade */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px; /* Espaço entre os blocos */
+}
