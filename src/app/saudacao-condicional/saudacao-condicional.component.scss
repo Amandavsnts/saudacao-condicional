@@ -3,28 +3,32 @@
   display: block;
 }
 
-.bloco-saudacao span h1 {
-  font-size: 60px; /* Tamanho da fonte desejado */
-}
-
 .flex-container {
   display: flex;
   flex-direction: column; /* Os itens em uma coluna */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  height: 60vh; /* Define a altura para ocupar toda a altura da viewport */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+}
+
+.clima-atual span h1 {
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+
+.clima-atual h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .bloco-saudacao,
 .clima-atual {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Tela transparente com 50% de opacidade */
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 30px;
   border-radius: 10px;
   text-align: center;
-  margin-bottom: 20px; /* Espaço entre os blocos */
+  line-height: 30px;
+  margin-bottom: 30px;
 }
