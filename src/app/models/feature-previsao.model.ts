@@ -1,7 +1,5 @@
-export interface City {
+export type PrevisaoTempo = {
   name: string;
-}
-
-export interface WeatherData {
-  weather: { main: string }[]; 
-}
+  clima: string;
+  city: string;
+};

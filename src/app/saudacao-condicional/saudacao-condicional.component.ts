@@ -23,7 +23,6 @@ export class SaudacaoCondicionalComponent implements OnInit {
 
   constructor(
     public datePipe: DatePipe,
-    private http: HttpClient,
     private previsaoDoTempo: PrevisaoTempoService
   ) {
     registerLocaleData(localePtBR);
@@ -54,7 +53,6 @@ export class SaudacaoCondicionalComponent implements OnInit {
   obterPrevisao(): void {
     this.previsaoDoTempo.obterPrevisao(this.city).subscribe((clima) => {
       this.clima = clima;
-      console.log(clima);
     });
   }
 }
